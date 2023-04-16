@@ -5,8 +5,11 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint script.js",
-    "lint:fix": "eslint --fix script.js"
+    "lint": "eslint script/*.js",
+    "lint:fix": "eslint --fix script/*.js",
+    "uglify": "uglifyjs script/script.js --output ext/app.script.js",
+    "autoprefix": "postcss style/style.css --output ext/style.css",
+    "autoprefix:watch": "postcss style/style.css --output ext/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,11 @@
   "homepage": "https://github.com/programmeur77/read-more-less#readme",
   "devDependencies": {
     "eslint": "^8.38.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.22",
+    "postcss-cli": "^10.1.0",
+    "uglify-js": "^3.17.4"
   }
 }
