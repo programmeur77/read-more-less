@@ -1,28 +1,30 @@
+:root {
+  --radius: 10px 10px 0 0;
+}
 body {
-  width: 90%;
+  background-color: aqua;
 }
 
-header h1 {
-  width: 30rem;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-.read-block {
-  width: 90%;
-  margin: auto;
+.card-holder {
+  width: 100%;
+  margin-top: 6%;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
 
-.read-block .read-block__content {
-  width: 20%;
-  height: 290px;
-  padding: 0 10px 0 10px;
-  margin-right: 10px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 14;
-  border: 1px solid black;
-  overflow: hidden;
+.card-holder .card-holder__content {
+  width: 30%;
+  padding: 1rem;
+  background-color: darkorange;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 10px 0 0;
+  box-shadow: -3px 0 10px grey;
+}
+
+.card-holder .card-holder__content .card__picture {
+  width: 26rem;
+  margin: auto;
+  margin-top: 0.2rem;
+  object-fit: cover;
 }
