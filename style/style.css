@@ -1,5 +1,11 @@
 body {
-  width: 100%;
+  width: 90%;
+}
+
+header h1 {
+  width: 30rem;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .read-block {
@@ -11,9 +17,12 @@ body {
 
 .read-block .read-block__content {
   width: 20%;
-  height: 295px;
+  height: 290px;
   padding: 0 10px 0 10px;
   margin-right: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 14;
   border: 1px solid black;
   overflow: hidden;
 }
