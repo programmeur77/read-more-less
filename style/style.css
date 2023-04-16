@@ -16,9 +16,8 @@ body {
   width: 30%;
   padding: 1rem;
   background-color: darkorange;
-  display: flex;
   flex-direction: column;
-  border-radius: 10px 10px 0 0;
+  border-radius: var(--radius);
   box-shadow: -3px 0 10px grey;
 }
 
@@ -27,4 +26,5 @@ body {
   margin: auto;
   margin-top: 0.2rem;
   object-fit: cover;
+  border-radius: var(--radius);
 }
