@@ -53,7 +53,19 @@ body {
   .card-holder__content
   .card__text-content
   .card__read-more-content {
-  display: none;
+  display: block;
+  opacity: 0;
+  height: 0;
+  transition: all 1s;
+}
+
+.card-holder
+  .card-holder__content
+  .card__text-content
+  .card__read-more-content--open {
+  display: block;
+  opacity: 1;
+  height: 7rem;
 }
 
 .card-holder .card-holder__content .card__read-btn {
@@ -68,6 +80,7 @@ body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   border-radius: 5px;
+  cursor: pointer;
   transition: background-color 1s;
 }
 
