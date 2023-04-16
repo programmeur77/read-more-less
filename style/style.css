@@ -1,0 +1,19 @@
+body {
+  width: 100%;
+}
+
+.read-block {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.read-block .read-block__content {
+  width: 20%;
+  height: 295px;
+  padding: 0 10px 0 10px;
+  margin-right: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+}
