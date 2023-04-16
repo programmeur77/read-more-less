@@ -1,3 +1,5 @@
+/* Font Fmaily 'Poppins' imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 :root {
   --radius: 10px 10px 0 0;
 }
@@ -7,24 +9,68 @@ body {
 
 .card-holder {
   width: 100%;
-  margin-top: 6%;
+  margin-top: 2%;
   display: flex;
   justify-content: center;
+  color: blanchedalmond;
 }
 
 .card-holder .card-holder__content {
   width: 30%;
+  height: fit-content;
   padding: 1rem;
+  margin-right: 1rem;
   background-color: darkorange;
   flex-direction: column;
   border-radius: var(--radius);
   box-shadow: -3px 0 10px grey;
+  transition: height 1s;
 }
 
 .card-holder .card-holder__content .card__picture {
-  width: 26rem;
+  width: 26.8rem;
   margin: auto;
   margin-top: 0.2rem;
   object-fit: cover;
   border-radius: var(--radius);
+}
+
+.card-holder .card-holder__content .card__name {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.card-holder .card-holder__content .card__text-content {
+  margin: 0 0.5em 1.2em 0.5em;
+  font-size: 1.1rem;
+}
+
+.card-holder
+  .card-holder__content
+  .card__text-content
+  .card__read-more-content {
+  display: none;
+}
+
+.card-holder .card-holder__content .card__read-btn {
+  width: 93%;
+  padding: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 5rem;
+  text-transform: uppercase;
+  background-color: rgb(222, 97, 52);
+  color: #eee;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 1s;
+}
+
+.card-holder .card-holder__content .card__read-btn:hover {
+  background-color: chocolate;
 }
