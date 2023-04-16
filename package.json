@@ -5,8 +5,8 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint *.js",
-    "lint:fix": "eslint --fix *.js"
+    "lint": "eslint script.js",
+    "lint:fix": "eslint --fix script.js"
   },
   "repository": {
     "type": "git",
