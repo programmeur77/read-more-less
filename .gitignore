@@ -3,3 +3,4 @@ package-lock.json
 .prettierrc
 node_modules/
 .DS_Store
+ext/
